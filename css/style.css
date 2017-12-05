@@ -1,0 +1,187 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*to avaoid overflow*/
+}
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Archivo Black', sans-serif;
+	font-family: 'Lobster', cursive;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto; /*to center the wrapper*/
+	background-color: #fff;
+}
+
+/*div {
+	padding: 20px;
+}*/
+
+
+/*main.wrapper div {
+	padding: 0;
+	margin: 0;
+}*/
+
+.menu {
+	height: 100px;
+	height: 50%;
+}
+
+.sidebar {
+	height: 300px;
+	background-color: #b2d6ff; 
+	width: 20%;
+	float: left;
+	height: 500px;
+}
+
+.sidebar {
+    width: 200px; /* Set a width if you like */
+}
+
+.sidebar a {
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.sidebar a:hover {
+    background-color: white; /* Dark grey background on mouse-over */
+}
+
+.sidebar a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+.content {
+	/*height: 500px;
+	background-color: #f5c58e; /*yellow*/
+	width: 80%;
+	float: left;
+	padding-left: : 50px;
+}
+
+.article-image {
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+}
+
+div.content > p {
+	margin-bottom: 10px;
+
+}
+
+.footer {
+	/*height: 200px;*/
+	background-color: #d6e9fe; /*light green*/
+	clear: both; /*clear offset floating effect*/
+	font-size: 12px;
+}
+
+.footer a.hover {
+	background-color: white;
+}
+
+.footer a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+
+.avatar{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 25px;
+	border-radius: 50%;
+	background-image: url(http://lorempixel.com/60/60/);
+}
+
+.username {
+	margin-bottom: 15px
+}
+
+
+h3.username + p {
+	overflow: hidden;
+}
+
+h1 {
+	color: blue;
+}
+
+
+
+.page {
+
+	/*border: 1px solid red;*/
+	/*height: 500px;*/
+}
+
+
+
+
+/*best vway to clear floats*/
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*column*/
+
+
+.column {
+	background-color: #b2d6ff;
+	height: 160px;
+	width: 31%;
+	margin: 20px 1.16%;
+	/*border: 1px solid red;*/ /*for testing*/
+	float: left;	
+	padding: 15px;
+	position: relative;
+}
+
+/*managin text overflow with multiline support*/
+
+.block-with-text {
+	overflow: hidden;
+	position: relative;
+	line-height: 1.2em; 
+	max-height: 3.6em;
+	text-align: left;
+	margin-right: -1em;
+	padding-right: 30px;
+}
+
+.block-with-text:before {
+	content: "...";
+	position: absolute;
+	right: 17px;
+	bottom: 0;
+}
+.block-with-text:after {
+	content: "";
+	position: absolute;
+	right: 17px;
+	width: 1em;
+	height: 1em;
+	margin-top: 0.2em;
+	background-color: #b2d6ff;
+
+}
+
+.read-more {
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+}
